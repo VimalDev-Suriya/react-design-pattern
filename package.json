@@ -1,0 +1,21 @@
+{
+  "name": "react-design-pattern",
+  "version": "1.0.0",
+  "description": "Design patterns that we can use in react to improve the scalability",
+  "main": "index.js",
+  "scripts": {
+    "setup:backend": "npm install --prefix backend",
+    "run:backend": "npm start --prefix backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VimalDev-Suriya/react-design-pattern.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VimalDev-Suriya/react-design-pattern/issues"
+  },
+  "homepage": "https://github.com/VimalDev-Suriya/react-design-pattern#readme"
+}
