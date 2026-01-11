@@ -1,5 +1,5 @@
-import Tab from "./components/CompoundComponent/Tab";
-import TabContainer from "./components/CompoundComponent/TabComponent";
+import Tab from "./components/CompoundComponent/Tab/Tab";
+import TabContainer from "./components/CompoundComponent/Tab/TabComponent";
 
 function App() {
   return (
@@ -29,17 +29,36 @@ function App() {
         </ol>
       </div>
 
-      <TabContainer>
+      {/* below componet handles both active tab index in both tabcontainer as well in tab component */}
+      {/* <TabContainer>
         <Tab label="tab1">
-          <p>Tab1 content</p>
+          <h2>Tab header 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            molestias alias dolorum consectetur deleniti velit atque, voluptas
+            tempore, mollitia ipsa, provident tenetur facere quos? Enim harum
+            sint repellat fugit fugiat?
+          </p>
         </Tab>
-        <Tab label="tab2">
-          <p>Tab2 content</p>
+        <Tab active label="tab2">
+          <h2>Tab header 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            molestias alias dolorum consectetur deleniti velit atque, voluptas
+            tempore, mollitia ipsa, provident tenetur facere quos? Enim harum
+            sint repellat fugit fugiat?
+          </p>
         </Tab>
         <Tab label="tab3">
-          <p>Tab3 content</p>
+          <h2>Tab header 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            molestias alias dolorum consectetur deleniti velit atque, voluptas
+            tempore, mollitia ipsa, provident tenetur facere quos? Enim harum
+            sint repellat fugit fugiat?
+          </p>
         </Tab>
-      </TabContainer>
+      </TabContainer> */}
     </>
   );
 }

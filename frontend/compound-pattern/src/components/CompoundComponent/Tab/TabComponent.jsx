@@ -7,20 +7,37 @@
  * </TabContainer>
  */
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // * Very basic tab
 const TabContainer = (props) => {
-  const { children } = props;
+  const { children, activeTab: activeTabLabel } = props;
 
   const [activeTabIdx, setActiveTabIdx] = useState(0);
 
   const tabs = Array.isArray(children) ? children : [children];
 
-  console.log("tabs", tabs);
+  useEffect(() => {
+    const idx = tabs.findIndex((child) => child.props.active);
+
+    if (idx !== -1) {
+      setActiveTabIdx(idx);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (activeTabLabel) {
+      const activeTabIdxFromTabContainer = tabs.findIndex(
+        (child) => child.props.label === activeTabLabel
+      );
+
+      activeTabIdxFromTabContainer !== -1
+        ? setActiveTabIdx(activeTabIdxFromTabContainer)
+        : null;
+    }
+  }, [activeTabLabel]);
 
   const handleClick = (idx) => {
-    console.log("idx", idx);
     setActiveTabIdx(idx);
   };
 
@@ -34,7 +51,10 @@ const TabContainer = (props) => {
             const { label } = child.props;
 
             return (
-              <li key={`${label}-${idx}`}>
+              <li
+                key={`${label}-${idx}`}
+                className={`${idx === activeTabIdx ? "active" : ""}`}
+              >
                 <button onClick={() => handleClick(idx)}>{label}</button>
               </li>
             );
