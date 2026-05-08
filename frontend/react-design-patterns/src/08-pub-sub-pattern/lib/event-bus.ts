@@ -1,19 +1,21 @@
 // * Publisher and Subscriber
-type cb = (data: any) => void;
-interface EventBus{
+export type cb = (data: any) => void;
+export interface EventBus {
   subscribe: (eventName: string, handler: cb) => () => void,
-  publish: (eventName: string, data:any) => void
+  publish: (eventName: string, data: any) => void
 }
 
 const listeners = new Map<string, Set<cb>>();
 
-export const eventBus:EventBus = {
+export const eventBus: EventBus = {
   subscribe(eventName: string, handler: cb) {
     if (!listeners.has(eventName)) {
       listeners.set(eventName, new Set());
     }
 
     listeners.get(eventName)?.add(handler);
+
+    console.log('listerners', listeners)
 
     // * UnSubscribe
     return () => {

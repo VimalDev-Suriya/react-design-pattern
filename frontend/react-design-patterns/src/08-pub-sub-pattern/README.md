@@ -32,3 +32,11 @@ Would you like to see how this pattern is used specifically for state management
 
 ### Usecases
 - Mainly used in Distributed systems- Communication between multiple system
+
+## Notes:
+
+- Always use Pub Sub pattern approch as the last and final approch.
+- Pub Sub is not the State Manager | state < props < conetext < State Manager.
+
+## Take aways
+- There are Broadcast - I yet to explor more
