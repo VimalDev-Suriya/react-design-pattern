@@ -2,8 +2,8 @@ import { startTransition, useOptimistic, useState } from 'react';
 
 const LikeButton = (props) => {
   const { initialLike } = props;
-  const [likes, setLikes] = useState(initialLike);
 
+  const [likes, setLikes] = useState(initialLike);
   const [optimisticValue, setOptimisticValue] = useOptimistic(
     likes,
     (currentState, value) => currentState + value,
