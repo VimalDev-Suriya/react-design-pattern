@@ -8,7 +8,7 @@ import AddToCartButton from './08-pub-sub-pattern/components/publishers/AddToCar
 import Toggle from './09-state-reducer-pattern/Toggle';
 import { toggleReducer_v2 } from './09-state-reducer-pattern/reducers';
 // import CardContainer from './09-slot-pattern/named-slot/CardContainer';
-import CardContainer from './09-slot-pattern/named-slot-map/CardContainer';
+import CardContainer from './10-slot-pattern/named-slot-map/CardContainer';
 
 function App() {
   const { isDark, toggleDark } = useTheme();
