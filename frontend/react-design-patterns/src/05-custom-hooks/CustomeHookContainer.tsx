@@ -1,7 +1,7 @@
 import ProductsAnalytics from './ProductsAnalytics';
 import ProductList from './ProductsList';
 
-const CustomeHoodContainer = () => {
+const CustomeHookContainer = () => {
   return (
     <div>
       <ProductList />
@@ -10,4 +10,4 @@ const CustomeHoodContainer = () => {
   );
 };
 
-export default CustomeHoodContainer;
+export default CustomeHookContainer;

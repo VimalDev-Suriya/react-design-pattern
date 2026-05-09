@@ -1,0 +1,19 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.accordion .accordion-item {
+  border: 1px solid black;
+}
+
+.accordion .accordion-content.hidden {
+  display: none;
+}
+
+.accordion .accordion-title {
+  background-color: bisque;
+  text-transform: uppercase;
+  cursor: pointer;
+}
