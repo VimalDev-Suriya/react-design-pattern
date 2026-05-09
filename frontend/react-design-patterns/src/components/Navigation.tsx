@@ -9,10 +9,11 @@ const TableOfContent = () => {
         alignItems: 'center',
       }}
     >
-      <Link to="/compound-design-pattern">Compound Design Pattern</Link>
       <Link to="/container-presentation-design-pattern">
         Container Presentation Pattern
       </Link>
+      <Link to="/compound-design-pattern">Compound Design Pattern</Link>
+      <Link to="/compound-design-pattern/v2">Compound Design Pattern V2</Link>
       <Link to="/higher-order-design-pattern">Higher Order Pattern</Link>
       <Link to="/custom-hook-design-pattern">Custom Hook Pattern</Link>
       <Link to="/optimistic-design-pattern">Optimistic Pattern</Link>

@@ -8,6 +8,7 @@ import OptimisticContainer from './07-optimistic-pattern/OptimisticContainer';
 import PubSubContainer from './08-pub-sub-pattern/PubSubContainer';
 import StateReducerContainer from './09-state-reducer-pattern/StateReducerContainer';
 import AccordionContainer from './02-compound-pattern/v1/AccordionContainer';
+import AccordionContainerV2 from './02-compound-pattern/v2/AccordionContainerV2';
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
           <Route
             path="/compound-design-pattern"
             element={<AccordionContainer />}
+          />
+          <Route
+            path="/compound-design-pattern/v2"
+            element={<AccordionContainerV2 />}
           />
           <Route path="/container-presentation-design-pattern" />
           <Route
