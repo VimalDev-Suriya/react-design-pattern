@@ -20,6 +20,7 @@ const TableOfContent = () => {
       <Link to="/pub-sub-design-pattern">Pub Sub Pattern</Link>
       <Link to="/state-reducer-design-pattern">State Reducer Pattern</Link>
       <Link to="/slot-design-pattern">SLot Pattern</Link>
+      <Link to="/error-boundary">Error Boundary</Link>
     </div>
   );
 };

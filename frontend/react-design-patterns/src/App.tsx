@@ -9,6 +9,7 @@ import PubSubContainer from './08-pub-sub-pattern/PubSubContainer';
 import StateReducerContainer from './09-state-reducer-pattern/StateReducerContainer';
 import AccordionContainer from './02-compound-pattern/v1/AccordionContainer';
 import AccordionContainerV2 from './02-compound-pattern/v2/AccordionContainerV2';
+import ErrorBoundaryContainer from './12-error-boundaries/ErrorBoundaryContainer';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
             element={<StateReducerContainer />}
           />
           <Route path="/slot-design-pattern" element={<CardContainer />} />
+          <Route path="/error-boundary" element={<ErrorBoundaryContainer />} />
         </Routes>
       </BrowserRouter>
     </div>
