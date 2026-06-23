@@ -4,6 +4,7 @@ const LikeButton = (props) => {
   const { initialLike } = props;
 
   const [likes, setLikes] = useState(initialLike);
+  // * Always remember that the optimistic hook get the initial value from the existing actual state.
   const [optimisticValue, setOptimisticValue] = useOptimistic(
     likes,
     (currentState, value) => currentState + value,
